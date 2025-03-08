@@ -16,11 +16,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-# Custom
-#include "keys/38.c"
-#include "includes/mods.dtsi"
-
 #define MEH LC(LS(LALT))
+
+# Custom
+#include "keys/38.h"
+#include "includes/mods.dtsi"
 
 #define BASE 0
 #define NAV  1
