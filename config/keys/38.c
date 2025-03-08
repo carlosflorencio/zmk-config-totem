@@ -47,14 +47,14 @@
 #define RB4 30
 #define RB5 31
 
-#define LT0 32  // left thumb keys
-#define LT1 33
-#define LT2 34
+#define TL0 32  // left thumb keys
+#define TL1 33
+#define TL2 34
 
-#define RT0 35  // right thumb keys
-#define RT1 36
-#define RT2 37
+#define TR0 35  // right thumb keys
+#define TR1 36
+#define TR2 37
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4 LB5  // Left-hand keys.
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4 RB5  // Right-hand keys.
-#define KEYS_T LT0 LT1 LT2 RT0 RT1 RT2                                          // Thumb keys.
+#define KEYS_T TL0 TL1 TL2 TL0 TL1 TL2                                          // Thumb keys.
