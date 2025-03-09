@@ -150,7 +150,7 @@
         // trigger a mod morph for the accent when pressing escape
         tm_delete: tm_delete {
             compatible = "zmk,behavior-hold-tap";
-            label = "THUMB_MOD";
+            label = "THUMB_MOD_escape";
             flavor = "tap-preferred";
 
             // how long a key must be pressed to trigger Hold behavior.
