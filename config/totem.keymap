@@ -146,6 +146,29 @@
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
         };
+
+        // trigger a mod morph for the accent when pressing escape
+        tm_delete: tm_delete {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUMB_MOD";
+            flavor = "tap-preferred";
+
+            // how long a key must be pressed to trigger Hold behavior.
+
+            tapping-term-ms = <250>;
+
+            // press a tapped hold-tap again within quick-tap-ms milliseconds 
+            // of the first press, it will always trigger the tap behavior.
+
+            quick-tap-ms = <300>;
+
+            // the tap behavior is triggered when releasing the hold-tap key 
+            // if no other key was pressed in the meantime
+
+            //retro-tap; // don't allow slow (hold-like) taps
+            #binding-cells = <1>;
+            bindings = <&mo>, <&bspc_del>;
+        };
         
 
         // trigger delete on backspace when shift is held
@@ -190,7 +213,7 @@
          &kp Q         &kp W         &kp E          &kp R            &kp T        &kp Y      &kp U           &kp I          &kp O         &kp P
          &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LSHIFT F   &kp G        &kp H      &hm_shift_r LSHIFT J  &hm_r LCTRL K  &hm_r LALT L  &hm_r LGUI SEMI
 &lt 4 A  &kp Z         &kp X         &kp C          &kp V            &kp B        &kp N      &kp M           &kp COMMA      &kp DOT       &kp FSLH         &lt 5 B
-                                     &tm 3 ESCAPE   &tm 1 &bspc_del  &tm 2 TAB    &kp ENTER  &kp SPACE       &kp DELETE
+                                     &tm 3 ESCAPE   &tm_delete 1  &tm 2 TAB    &kp ENTER  &kp SPACE       &kp DELETE
             >;
         };
 
