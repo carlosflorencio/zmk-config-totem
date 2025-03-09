@@ -248,10 +248,10 @@
 
         nav {
             bindings = <
-        &trans  &kp LA(LG(LEFT_ARROW))  &trans  &kp LA(LG(RIGHT))  &trans    &kp PAGE_UP     &kp LS(LA(LG(LC(U))))  &kp LS(LA(LC(LG(E))))      &kp LG(LC(LA(LS(O))))  &trans
-        &trans  &trans                  &trans  &trans             &trans    &kp LEFT_ARROW  &kp DOWN               &kp UP_ARROW               &kp RIGHT              &trans
-&trans  &trans  &trans                  &trans  &trans             &trans    &kp PAGE_DOWN   &trans                 &trans                     &trans                 &trans  &trans
-                                        &trans  &trans             &trans    &trans          &kp LG(SPACE)          &kp LS(LA(LC(LG(ENTER))))
+        &trans  &kp LA(LG(LEFT_ARROW))  &kp LG(W)          &kp LA(LG(RIGHT))  &trans    &kp PAGE_UP     &kp LS(LA(LG(LC(U))))  &kp LS(LA(LC(LG(E))))      &kp LG(LC(LA(LS(O))))  &trans
+        &trans  &trans                  &trans             &trans             &trans    &kp LEFT_ARROW  &kp DOWN               &kp UP_ARROW               &kp RIGHT              &trans
+&trans  &trans  &kp LG(LS(J))           &kp LG(LS(SLASH))  &kp LG(LS(SPACE))  &trans    &kp PAGE_DOWN   &trans                 &trans                     &trans                 &trans  &trans
+                                        &trans             &trans             &trans    &trans          &kp LG(SPACE)          &kp LS(LA(LC(LG(ENTER))))
             >;
         };
 
