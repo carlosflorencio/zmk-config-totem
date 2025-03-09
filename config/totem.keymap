@@ -178,14 +178,12 @@
         };
 
         // trigger delete on backspace when shift is held
-
         accent: accent {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp E>, <&kp GRAVE>;
+            bindings = <&hm_l LGUI A>, <&kp LA(GRAVE)>;
 
-            mods = <(MOD_LALT|MOD_RSFT)>;
-            keep-mods = <(MOD_LALT)>;
+            mods = <(MOD_LALT)>;
         };
     };
 };
@@ -209,7 +207,7 @@
             label = "BASE";
             bindings = <
         &kp Q         &kp W         &kp E          &kp R                 &kp T        &kp Y      &kp U                 &kp I          &kp O         &kp P
-        &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LSHIFT F  &kp G        &kp H      &hm_shift_r LSHIFT J  &hm_r LCTRL K  &hm_r LALT L  &hm_r LGUI SEMI
+        &accent       &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LSHIFT F  &kp G        &kp H      &hm_shift_r LSHIFT J  &hm_r LCTRL K  &hm_r LALT L  &hm_r LGUI SEMI
 &gresc  &kp Z         &kp X         &kp C          &kp V                 &kp B        &kp N      &kp M                 &kp COMMA      &kp DOT       &kp FSLH         &caps_word
                                     &tm 3 ESCAPE   &tm_delete 1 0        &tm 2 TAB    &kp ENTER  &kp SPACE             &tm 4 DELETE
             >;
