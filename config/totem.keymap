@@ -142,10 +142,30 @@
             // the tap behavior is triggered when releasing the hold-tap key 
             // if no other key was pressed in the meantime
 
-            retro-tap; // don't allow slow (hold-like) taps
+            //retro-tap; // don't allow slow (hold-like) taps
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
         };
+        
+
+        // trigger delete on backspace when shift is held
+        bspc_del: bspc_del {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+
+        // trigger delete on backspace when shift is held
+        accent: accent {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp GRAVE>;
+            mods = <(MOD_LALT|MOD_RSFT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
     };
 };
 
@@ -168,9 +188,9 @@
             label = "BASE";
             bindings = <
          &kp Q         &kp W         &kp E          &kp R            &kp T        &kp Y      &kp U           &kp I          &kp O         &kp P
-         &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_l LSHIFT F   &kp G        &kp H      &hm_r LSHIFT J  &hm_r LCTRL K  &hm_r LALT L  &hm_r LGUI SEMI
+         &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LSHIFT F   &kp G        &kp H      &hm_shift_r LSHIFT J  &hm_r LCTRL K  &hm_r LALT L  &hm_r LGUI SEMI
 &lt 4 A  &kp Z         &kp X         &kp C          &kp V            &kp B        &kp N      &kp M           &kp COMMA      &kp DOT       &kp FSLH         &lt 5 B
-                                     &tm 3 ESCAPE   &tm 1 BACKSPACE  &tm 2 TAB    &kp ENTER  &kp SPACE       &kp DELETE
+                                     &tm 3 ESCAPE   &tm 1 &bspc_del  &tm 2 TAB    &kp ENTER  &kp SPACE       &kp DELETE
             >;
         };
 
