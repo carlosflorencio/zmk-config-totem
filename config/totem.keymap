@@ -102,7 +102,7 @@
             // replaced global-quick-tap
 
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
-            hold-trigger-key-positions = <KEYS_R TR1 TR2>; // not including enter to allow fast shift enter
+            hold-trigger-key-positions = <KEYS_R KEYS_T>;
             // hold-trigger-on-release;
         };
 
