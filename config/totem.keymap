@@ -309,18 +309,18 @@
 
         symb_right {
             bindings = <
-       &trans  &trans  &trans  &trans  &trans    &kp CARET         &kp AMPERSAND      &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-       &trans  &trans  &trans  &trans  &trans    &kp PLUS          &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp EQUAL             &kp MINUS
-&sl 7  &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH    &kp PIPE              &kp UNDERSCORE         &kp SQT
-                       &trans  &trans  &trans    &trans            &trans             &trans
+       &trans  &trans  &trans  &trans  &trans    &kp CARET      &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+       &trans  &trans  &trans  &trans  &trans    &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp EQUAL             &kp MINUS
+&sl 7  &trans  &trans  &trans  &trans  &trans    &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE              &kp UNDERSCORE         &kp SQT
+                       &trans  &trans  &trans    &trans         &trans            &trans
             >;
         };
 
         symb_left {
             bindings = <
         &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT    &trans  &trans  &trans  &trans  &trans
-        &kp GRAVE        &kp TILDE          &trans    &trans      &trans         &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans             &trans    &trans      &trans         &trans  &trans  &trans  &trans  &trans  &trans
+        &kp GRAVE        &kp SQT            &trans    &trans      &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE        &trans             &trans    &trans      &trans         &trans  &trans  &trans  &trans  &trans  &trans
                                             &trans    &trans      &trans         &trans  &trans  &trans
             >;
         };
