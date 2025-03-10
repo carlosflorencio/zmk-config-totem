@@ -193,6 +193,27 @@
             bindings = <&kp>, <&num_word>;
         };
 
+        hyper_caps: hyper_caps {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+
+            // how long a key must be pressed to trigger Hold behavior.
+
+            tapping-term-ms = <250>;
+
+            // press a tapped hold-tap again within quick-tap-ms milliseconds 
+            // of the first press, it will always trigger the tap behavior.
+
+            quick-tap-ms = <300>;
+
+            // the tap behavior is triggered when releasing the hold-tap key 
+            // if no other key was pressed in the meantime
+            //retro-tap; // don't allow slow (hold-like) taps
+
+            #binding-cells = <2>;
+            bindings = <&kp>, <&caps_word>;
+        };
+
         // trigger delete on backspace when shift is held
 
         bspc_del: bspc_del {
@@ -263,7 +284,7 @@
             bindings = <
                                    &kp Q    &kp W         &kp E          &kp R                 &kp T        &kp Y      &kp U                 &kp I          &kp O         &kp P
                                    &accent  &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LSHIFT F  &kp G        &kp H      &hm_shift_r LSHIFT J  &hm_r LCTRL K  &hm_r LALT L  &hm_r LGUI SEMI
-&hyper_num LS(LA(LC(LEFT_GUI))) 7  &kp Z    &kp X         &kp C          &kp V                 &kp B        &kp N      &kp M                 &kp COMMA      &kp DOT       &kp FSLH         &caps_word
+&hyper_num LS(LA(LC(LEFT_GUI))) 7  &kp Z    &kp X         &kp C          &kp V                 &kp B        &kp N      &kp M                 &kp COMMA      &kp DOT       &kp FSLH         &hyper_caps LS(LA(LC(LEFT_GUI))) 0
                                                           &tm 3 ESCAPE   &tm_delete 1 0        &tm 2 TAB    &kp ENTER  &kp SPACE             &tm 5 DELETE
             >;
         };
