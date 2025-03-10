@@ -312,7 +312,7 @@
         &kp CARET        &kp PIPE     &kp BACKSLASH  &trans      &trans         &kp ASTERISK   &kp LEFT_BRACE        &kp DOUBLE_QUOTES  &kp RIGHT_BRACE        &kp PLUS
         &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp GRAVE      &kp LEFT_PARENTHESIS  &kp EQUAL          &kp RIGHT_PARENTHESIS  &kp MINUS
 &trans  &trans           &trans       &trans         &trans      &trans         &kp AMPERSAND  &kp LEFT_BRACKET      &kp SQT            &kp RIGHT_BRACKET      &kp UNDERSCORE  &trans
-                                      &trans         &trans      &trans         &trans         &trans                &trans
+                                      &trans         &trans      &trans         &trans         &trans                &kp LEFT_GUI
             >;
         };
 
@@ -328,7 +328,7 @@
         media {
             bindings = <
        &kp C_VOLUME_UP  &trans  &trans  &trans             &trans           &trans  &kp C_REWIND  &trans            &kp C_FAST_FORWARD  &trans
-       &kp K_MUTE       &trans  &trans  &kp LS(LC(LG(Z)))  &kp LA(LS(A))    &trans  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT          &trans
+       &kp K_MUTE       &trans  &trans  &kp LG(LA(LC(Z)))  &kp LA(LS(A))    &trans  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT          &trans
 &sl 6  &kp C_VOL_DN     &trans  &trans  &trans             &trans           &trans  &trans        &trans            &trans              &trans  &trans
                                 &trans  &trans             &trans           &trans  &trans        &trans
             >;
