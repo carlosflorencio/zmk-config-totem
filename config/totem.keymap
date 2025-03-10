@@ -290,6 +290,11 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <24 27>;
         };
+
+        backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <4 5>;
+        };
     };
 
     macros {
