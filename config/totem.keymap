@@ -285,7 +285,7 @@
                                    &kp Q    &kp W         &kp E          &kp R                 &kp T        &kp Y      &kp U                 &kp I          &kp O         &kp P
                                    &accent  &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LSHIFT F  &kp G        &kp H      &hm_shift_r LSHIFT J  &hm_r LCTRL K  &hm_r LALT L  &hm_r LGUI SEMI
 &hyper_num LS(LA(LC(LEFT_GUI))) 7  &kp Z    &kp X         &kp C          &kp V                 &kp B        &kp N      &kp M                 &kp COMMA      &kp DOT       &kp FSLH         &hyper_caps LS(LA(LC(LEFT_GUI))) 0
-                                                          &tm 3 ESCAPE   &tm_delete 1 0        &tm 2 TAB    &kp ENTER  &kp SPACE             &tm 5 DELETE
+                                                          &tm 3 ESCAPE   &tm_delete 1 0        &tm 2 TAB    &kp ENTER  &tm 6 SPACE           &tm 4 DELETE
             >;
         };
 
@@ -300,28 +300,37 @@
 
         num {
             bindings = <
-        &trans        &trans        &trans        &trans        &trans    &kp ASTERISK  &kp PLUS       &kp MINUS     &kp EQUAL  &trans
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7         &kp N8        &kp N9     &kp N0
-&trans  &trans        &trans        &trans        &trans        &trans    &trans        &trans         &trans        &trans     &trans  &trans
-                                    &trans        &trans        &trans    &sl 4         &kp BACKSPACE  &kp LEFT_GUI
+        &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp N7        &kp N8         &kp N9        &kp PLUS
+        &trans  &trans  &trans  &trans  &trans    &kp PERIOD    &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp MINUS
+&trans  &trans  &trans  &trans  &trans  &trans    &kp COMMA     &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp EQUAL  &trans
+                        &trans  &trans  &trans    &sl 5         &kp N0        &kp BACKSPACE
             >;
         };
 
-        symb {
+        symb_right {
             bindings = <
-        &kp CARET        &kp PIPE     &kp BACKSLASH  &trans      &trans         &kp ASTERISK   &kp LEFT_BRACE        &kp DOUBLE_QUOTES  &kp RIGHT_BRACE        &kp PLUS
-        &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp GRAVE      &kp LEFT_PARENTHESIS  &kp EQUAL          &kp RIGHT_PARENTHESIS  &kp MINUS
-&trans  &trans           &trans       &trans         &trans      &trans         &kp AMPERSAND  &kp LEFT_BRACKET      &kp SQT            &kp RIGHT_BRACKET      &kp UNDERSCORE  &trans
-                                      &trans         &trans      &trans         &trans         &trans                &kp LEFT_GUI
+        &trans  &trans  &trans  &trans  &trans    &kp CARET         &kp AMPERSAND      &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+        &trans  &trans  &trans  &trans  &trans    &kp PLUS          &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp EQUAL             &kp MINUS
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH    &kp PIPE              &kp UNDERSCORE         &kp SQT
+                        &trans  &trans  &trans    &trans            &trans             &trans
+            >;
+        };
+
+        symb_left {
+            bindings = <
+        &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT    &trans  &trans  &trans  &trans  &trans
+        &kp GRAVE        &kp TILDE          &trans    &trans      &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans             &trans    &trans      &trans         &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans    &trans      &trans         &trans  &trans  &trans
             >;
         };
 
         function {
             bindings = <
-        &kp F11  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &kp F1   &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -329,7 +338,7 @@
             bindings = <
        &kp C_VOLUME_UP  &trans  &trans  &trans             &trans           &trans  &kp C_REWIND  &trans            &kp C_FAST_FORWARD  &trans
        &kp K_MUTE       &trans  &trans  &kp LG(LA(LC(Z)))  &kp LA(LS(A))    &trans  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT          &trans
-&sl 6  &kp C_VOL_DN     &trans  &trans  &trans             &trans           &trans  &trans        &trans            &trans              &trans  &trans
+&sl 7  &kp C_VOL_DN     &trans  &trans  &trans             &trans           &trans  &trans        &trans            &trans              &trans  &trans
                                 &trans  &trans             &trans           &trans  &trans        &trans
             >;
         };
