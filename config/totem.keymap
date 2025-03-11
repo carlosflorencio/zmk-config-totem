@@ -295,6 +295,16 @@
             bindings = <&kp GRAVE>;
             key-positions = <3 6>;
         };
+
+        leader_software {
+            bindings = <&kp F13>;
+            key-positions = <13 16>;
+        };
+
+        number {
+            bindings = <&hyper_num LS(LA(LC(LEFT_GUI))) 2>;
+            key-positions = <33 36>;
+        };
     };
 
     macros {
