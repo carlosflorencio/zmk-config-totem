@@ -297,7 +297,7 @@
         };
 
         leader_software {
-            bindings = <&kp F13>;
+            bindings = <&select_line>;
             key-positions = <13 16>;
         };
 
@@ -308,10 +308,10 @@
     };
 
     macros {
-        new_macro: new_macro {
+        select_line: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp B>;
+            bindings = <&kp HOME &kp LS(END)>;
             label = "NEW_MACRO";
         };
     };
