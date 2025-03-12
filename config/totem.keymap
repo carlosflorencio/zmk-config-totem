@@ -352,7 +352,7 @@
 
         leader_software {
             bindings = <&select_line>;
-            key-positions = <13 16>;
+            key-positions = <32 37>;
         };
 
         number {
@@ -376,10 +376,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-                                   &kp Q    &kp W            &kp E              &kp R                 &kp T        &kp Y      &kp U                 &kp I               &kp O             &kp P
-                                   &accent  &hm_l LALT S     &hm_l LCTRL D      &hm_shift_l LSHIFT F  &kp G        &kp H      &hm_shift_r LSHIFT J  &hm_r LCTRL K       &hm_r LALT L      &hm_r LGUI SEMI
-&hyper_num LS(LA(LC(LEFT_GUI))) 2  &kp Z    &tap_left_brace  &tap_left_bracket  &tap_left_paren       &kp B        &kp N      &tap_right_paren      &tap_right_bracket  &tap_right_brace  &kp FSLH         &hyper_caps LS(LA(LC(LEFT_GUI))) 0
-                                                             &tm 3 ESCAPE       &tm_delete 1 0        &tm 2 TAB    &kp ENTER  &tm 6 SPACE           &tm 4 DELETE
+                                   &kp Q    &kp W         &kp E          &kp R                 &kp T        &kp Y      &kp U                 &kp I          &kp O         &kp P
+                                   &accent  &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LSHIFT F  &kp G        &kp H      &hm_shift_r LSHIFT J  &hm_r LCTRL K  &hm_r LALT L  &hm_r LGUI SEMI
+&hyper_num LS(LA(LC(LEFT_GUI))) 2  &kp Z    &kp X         &kp C          &kp V                 &kp B        &kp N      &kp M                 &kp COMMA      &kp PERIOD    &kp FSLH         &hyper_caps LS(LA(LC(LEFT_GUI))) 0
+                                                          &tm 3 ESCAPE   &tm_delete 1 0        &tm 2 TAB    &kp ENTER  &tm 6 SPACE           &tm 4 DELETE
             >;
         };
 
