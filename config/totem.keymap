@@ -130,7 +130,7 @@
         tm: tm {
             compatible = "zmk,behavior-hold-tap";
             label = "THUMB_MOD";
-            flavor = "tap-preferred";
+            flavor = "balanced";
 
             // how long a key must be pressed to trigger Hold behavior.
 
