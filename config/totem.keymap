@@ -234,6 +234,48 @@
 
             mods = <(MOD_LALT)>;
         };
+
+        tap_left_brace: tap_left_brace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_LEFT_BRACE";
+            #binding-cells = <0>;
+            bindings = <&kp X>, <&kp LEFT_BRACE>;
+        };
+
+        tap_left_bracket: tap_left_bracket {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_LEFT_BRACKET";
+            #binding-cells = <0>;
+            bindings = <&kp C>, <&kp LEFT_BRACKET>;
+        };
+
+        tap_left_paren: tap_left_paren {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_LEFT_PAREN";
+            #binding-cells = <0>;
+            bindings = <&kp V>, <&kp LEFT_PARENTHESIS>;
+        };
+
+        tap_right_paren: tap_right_paren {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_RIGHT_PAREN";
+            #binding-cells = <0>;
+            bindings = <&kp M>, <&kp RIGHT_PARENTHESIS>;
+        };
+
+        tap_right_bracket: tap_right_bracket {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_RIGHT_BRACKET";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp RIGHT_BRACKET>;
+        };
+
+        tap_right_brace: tap_right_brace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_RIGHT_BRACE";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD>, <&kp RIGHT_BRACE>;
+        };
     };
 };
 
@@ -322,10 +364,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-                                   &kp Q    &kp W         &kp E          &kp R                 &kp T        &kp Y      &kp U                 &kp I          &kp O         &kp P
-                                   &accent  &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LSHIFT F  &kp G        &kp H      &hm_shift_r LSHIFT J  &hm_r LCTRL K  &hm_r LALT L  &hm_r LGUI SEMI
-&hyper_num LS(LA(LC(LEFT_GUI))) 2  &kp Z    &kp X         &kp C          &kp V                 &kp B        &kp N      &kp M                 &kp COMMA      &kp DOT       &kp FSLH         &hyper_caps LS(LA(LC(LEFT_GUI))) 0
-                                                          &tm 3 ESCAPE   &tm_delete 1 0        &tm 2 TAB    &kp ENTER  &tm 6 SPACE           &tm 4 DELETE
+                                   &kp Q    &kp W            &kp E              &kp R                 &kp T        &kp Y      &kp U                 &kp I               &kp O               &kp P
+                                   &accent  &hm_l LALT S     &hm_l LCTRL D      &hm_shift_l LSHIFT F  &kp G        &kp H      &hm_shift_r LSHIFT J  &hm_r LCTRL K       &hm_r LALT L        &hm_r LGUI SEMI
+&hyper_num LS(LA(LC(LEFT_GUI))) 2  &kp Z    &tap_left_brace  &tap_left_bracket  &tap_left_paren       &kp B        &kp N      &tap_right_paren      &tap_right_bracket  &tap_right_bracket  &kp FSLH         &hyper_caps LS(LA(LC(LEFT_GUI))) 0
+                                                             &tm 3 ESCAPE       &tm_delete 1 0        &tm 2 TAB    &kp ENTER  &tm 6 SPACE           &tm 4 DELETE
             >;
         };
 
