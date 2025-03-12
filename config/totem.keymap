@@ -359,6 +359,11 @@
             bindings = <&hyper_num LS(LA(LC(LEFT_GUI))) 2>;
             key-positions = <33 36>;
         };
+
+        dash2 {
+            bindings = <&kp MINUS>;
+            key-positions = <10 19>;
+        };
     };
 
     macros {
@@ -385,9 +390,9 @@
 
         nav {
             bindings = <
-        &trans  &kp LA(LG(LEFT_ARROW))  &kp LG(W)          &kp LA(LG(RIGHT))  &kp LG(T)    &kp PAGE_UP     &kp LS(LA(LG(LC(U))))  &kp LS(LA(LC(LG(E))))      &kp LG(LC(LA(LS(O))))  &trans
+        &trans  &kp LA(LG(LEFT_ARROW))  &kp LG(W)          &kp LA(LG(RIGHT))  &kp LG(T)    &kp HOME        &kp LS(LA(LG(LC(U))))  &kp LS(LA(LC(LG(E))))      &kp LG(LC(LA(LS(O))))  &trans
         &trans  &trans                  &trans             &trans             &trans       &kp LEFT_ARROW  &kp DOWN               &kp UP_ARROW               &kp RIGHT              &trans
-&trans  &trans  &kp LG(LS(J))           &kp LG(LS(SLASH))  &kp LG(LS(SPACE))  &trans       &kp PAGE_DOWN   &trans                 &trans                     &trans                 &trans  &trans
+&trans  &trans  &kp LG(LS(J))           &kp LG(LS(SLASH))  &kp LG(LS(SPACE))  &trans       &kp END         &kp PAGE_DOWN          &kp PAGE_UP                &trans                 &trans  &trans
                                         &trans             &trans             &trans       &kt F17         &kp LG(SPACE)          &kp LS(LA(LC(LG(ENTER))))
             >;
         };
