@@ -241,7 +241,7 @@
             #binding-cells = <0>;
             bindings = <&kp X>, <&kp LEFT_BRACE>;
 
-            tapping-term-ms = <80>;
+            tapping-term-ms = <150>;
         };
 
         tap_left_bracket: tap_left_bracket {
@@ -250,7 +250,7 @@
             #binding-cells = <0>;
             bindings = <&kp C>, <&kp LEFT_BRACKET>;
 
-            tapping-term-ms = <80>;
+            tapping-term-ms = <150>;
         };
 
         tap_left_paren: tap_left_paren {
@@ -259,7 +259,7 @@
             #binding-cells = <0>;
             bindings = <&kp V>, <&kp LEFT_PARENTHESIS>;
 
-            tapping-term-ms = <80>;
+            tapping-term-ms = <150>;
         };
 
         tap_right_paren: tap_right_paren {
@@ -268,7 +268,7 @@
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp RIGHT_PARENTHESIS>;
 
-            tapping-term-ms = <80>;
+            tapping-term-ms = <150>;
         };
 
         tap_right_bracket: tap_right_bracket {
@@ -277,7 +277,7 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp RIGHT_BRACKET>;
 
-            tapping-term-ms = <80>;
+            tapping-term-ms = <150>;
         };
 
         tap_right_brace: tap_right_brace {
@@ -286,7 +286,7 @@
             #binding-cells = <0>;
             bindings = <&kp PERIOD>, <&kp RIGHT_BRACE>;
 
-            tapping-term-ms = <80>;
+            tapping-term-ms = <150>;
         };
     };
 };
