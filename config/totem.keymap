@@ -234,60 +234,6 @@
 
             mods = <(MOD_LALT)>;
         };
-
-        tap_left_brace: tap_left_brace {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_LEFT_BRACE";
-            #binding-cells = <0>;
-            bindings = <&kp X>, <&kp LEFT_BRACE>;
-
-            tapping-term-ms = <150>;
-        };
-
-        tap_left_bracket: tap_left_bracket {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_LEFT_BRACKET";
-            #binding-cells = <0>;
-            bindings = <&kp C>, <&kp LEFT_BRACKET>;
-
-            tapping-term-ms = <150>;
-        };
-
-        tap_left_paren: tap_left_paren {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_LEFT_PAREN";
-            #binding-cells = <0>;
-            bindings = <&kp V>, <&kp LEFT_PARENTHESIS>;
-
-            tapping-term-ms = <150>;
-        };
-
-        tap_right_paren: tap_right_paren {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_RIGHT_PAREN";
-            #binding-cells = <0>;
-            bindings = <&kp M>, <&kp RIGHT_PARENTHESIS>;
-
-            tapping-term-ms = <150>;
-        };
-
-        tap_right_bracket: tap_right_bracket {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_RIGHT_BRACKET";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp RIGHT_BRACKET>;
-
-            tapping-term-ms = <150>;
-        };
-
-        tap_right_brace: tap_right_brace {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_RIGHT_BRACE";
-            #binding-cells = <0>;
-            bindings = <&kp PERIOD>, <&kp RIGHT_BRACE>;
-
-            tapping-term-ms = <150>;
-        };
     };
 };
 
@@ -371,7 +317,7 @@
         };
 
         paste {
-            bindings = <&kp LG(P)>;
+            bindings = <&kp LG(V)>;
             key-positions = <23 24>;
         };
 
