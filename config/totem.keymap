@@ -364,6 +364,21 @@
             bindings = <&kp MINUS>;
             key-positions = <10 19>;
         };
+
+        copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <22 23>;
+        };
+
+        paste {
+            bindings = <&kp LG(P)>;
+            key-positions = <23 24>;
+        };
+
+        clipboard {
+            bindings = <&kp LG(LS(V))>;
+            key-positions = <22 23 24>;
+        };
     };
 
     macros {
