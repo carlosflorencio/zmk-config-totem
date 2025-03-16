@@ -278,7 +278,7 @@
 
         left_parent {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <6 2 1>;
+            key-positions = <2 1>;
         };
 
         right_parent {
