@@ -243,27 +243,27 @@
 
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <2 7>;
+            key-positions = <2 3>;
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <23 28>;
+            key-positions = <7 6>;
         };
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <1 8>;
+            key-positions = <1 3>;
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <22 29>;
+            key-positions = <8 6>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <0 9>;
+            key-positions = <21 30>;
         };
 
         single_quotes {
@@ -278,12 +278,12 @@
 
         left_parent {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <3 6>;
+            key-positions = <6 2 1>;
         };
 
         right_parent {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <24 27>;
+            key-positions = <7 8>;
         };
 
         backtick {
@@ -323,7 +323,12 @@
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <21 30>;
+            key-positions = <20 31>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <0 9>;
         };
     };
 
