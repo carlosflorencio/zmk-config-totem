@@ -244,121 +244,169 @@
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <2 3>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <7 6>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <1 3>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <8 6>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <21 30>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         single_quotes {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <12 17>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         quotes {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <11 18>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         left_parent {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <2 1>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         right_parent {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         backtick {
             bindings = <&kp GRAVE>;
             key-positions = <13 16>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         leader_software {
             bindings = <&select_line>;
             key-positions = <32 37>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         number {
             bindings = <&hyper_num LS(LA(LC(LEFT_GUI))) 2>;
             key-positions = <33 36>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         dash2 {
             bindings = <&kp MINUS>;
             key-positions = <10 19>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         copy {
             bindings = <&kp LG(C)>;
             key-positions = <22 23>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         paste {
             bindings = <&kp LG(V)>;
             key-positions = <23 24>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         clipboard {
             bindings = <&kp LG(LS(V))>;
             key-positions = <22 23 24>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <20 31>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <0 9>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         exclamation {
             bindings = <&kp EXCLAMATION>;
             key-positions = <24 27>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         at_sign {
             bindings = <&kp AT_SIGN>;
             key-positions = <23 28>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <22 29>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         xor {
             bindings = <&kp CARET>;
             key-positions = <4 5>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         pipe {
             bindings = <&kp PIPE>;
             key-positions = <25 26>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
 
         and {
             bindings = <&kp AMPERSAND>;
             key-positions = <14 15>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <70>;
         };
     };
 
