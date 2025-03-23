@@ -245,14 +245,14 @@
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <2 3>;
             require-prior-idle-ms = <200>;
-            timeout-ms = <60>;
+            timeout-ms = <40>;
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <7 6>;
             require-prior-idle-ms = <200>;
-            timeout-ms = <60>;
+            timeout-ms = <40>;
         };
 
         left_brace {
@@ -294,14 +294,14 @@
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <2 1>;
             require-prior-idle-ms = <200>;
-            timeout-ms = <60>;
+            timeout-ms = <40>;
         };
 
         right_parent {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
             require-prior-idle-ms = <200>;
-            timeout-ms = <60>;
+            timeout-ms = <40>;
         };
 
         backtick {
@@ -329,7 +329,7 @@
             bindings = <&kp MINUS>;
             key-positions = <10 19>;
             require-prior-idle-ms = <150>;
-            timeout-ms = <70>;
+            timeout-ms = <60>;
         };
 
         copy {
